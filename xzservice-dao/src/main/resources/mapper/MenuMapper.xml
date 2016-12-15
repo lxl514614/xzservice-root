@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xinhuanet.hylanda.dao.general.IMenuDao" >
+  <resultMap id="BaseResultMap" type="com.xinhuanet.hylanda.model.entity.Menu" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="crt_ts" property="crtTs" jdbcType="TIMESTAMP" />
+    <result column="update_ts" property="updateTs" jdbcType="TIMESTAMP" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="code" property="code" jdbcType="VARCHAR" />
+    <result column="level" property="level" jdbcType="TINYINT" />
+    <result column="data_trigger" property="dataTrigger" jdbcType="VARCHAR" />
+    <result column="parent_code" property="parentCode" jdbcType="VARCHAR" />
+    <result column="action" property="action" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="sort" property="sort" jdbcType="TINYINT" />
+    <result column="icon" property="icon" jdbcType="VARCHAR" />
+    <result column="foot_icon" property="footIcon" jdbcType="VARCHAR" />
+    <result column="src_type" property="srcType" jdbcType="VARCHAR" />
+    <result column="exec_exp" property="execExp" jdbcType="VARCHAR" />
+  </resultMap>
+
+
+
+</mapper>

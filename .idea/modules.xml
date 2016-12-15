@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/xzservice-common/xzservice-common.iml" filepath="$PROJECT_DIR$/xzservice-common/xzservice-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzservice-dao/xzservice-dao.iml" filepath="$PROJECT_DIR$/xzservice-dao/xzservice-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzservice-model/xzservice-model.iml" filepath="$PROJECT_DIR$/xzservice-model/xzservice-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzservice-root.iml" filepath="$PROJECT_DIR$/xzservice-root.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzservice-security/xzservice-security.iml" filepath="$PROJECT_DIR$/xzservice-security/xzservice-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzservice-service/xzservice-service.iml" filepath="$PROJECT_DIR$/xzservice-service/xzservice-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xzservice-web/xzservice-web.iml" filepath="$PROJECT_DIR$/xzservice-web/xzservice-web.iml" />
+    </modules>
+  </component>
+</project>

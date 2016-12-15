@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="xzservice-common" />
+        <module name="xzservice-dao" />
+        <module name="xzservice-model" />
+        <module name="xzservice-security" />
+        <module name="xzservice-service" />
+        <module name="xzservice-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="xzservice-common" target="1.7" />
+      <module name="xzservice-dao" target="1.7" />
+      <module name="xzservice-model" target="1.7" />
+      <module name="xzservice-mvc" target="1.7" />
+      <module name="xzservice-root" target="1.7" />
+      <module name="xzservice-security" target="1.7" />
+      <module name="xzservice-service" target="1.7" />
+      <module name="xzservice-web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="xzservice-web:war">
+    <output-path>$PROJECT_DIR$/xzservice-web/target</output-path>
+    <root id="archive" name="xzservice-web.war">
+      <element id="artifact" artifact-name="xzservice-web:war exploded" />
+    </root>
+  </artifact>
+</component>
