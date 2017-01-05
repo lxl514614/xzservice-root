@@ -1,4 +1,4 @@
-package com.xinhuanet.hylanda.common;
+package com.xinhuanet.hylanda.model.common;
 
 import java.util.List;
 

@@ -16,6 +16,7 @@
         <module>xzservice-web</module>
         <module>xzservice-common</module>
         <module>xzservice-security</module>
+        <module>xzservice-mvc</module>
     </modules>
 
     <properties>

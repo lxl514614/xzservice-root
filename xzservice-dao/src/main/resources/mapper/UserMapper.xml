@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.xinhuanet.hylanda.dao.general.IUserDao" >
+<mapper namespace="com.xinhuanet.hylanda.dao.UserMapper" >
   <resultMap id="BaseResultMap" type="com.xinhuanet.hylanda.model.entity.User" >
     <id column="id" property="id" jdbcType="BIGINT" />
     <result column="crt_ts" property="crtTs" jdbcType="TIMESTAMP" />
@@ -12,9 +12,47 @@
     <result column="status" property="status" jdbcType="VARCHAR" />
     <result column="username" property="username" jdbcType="VARCHAR" />
   </resultMap>
-
-  <select id="getAllUser" resultType="com.xinhuanet.hylanda.model.entity.User" >
-    select * from td_user where status = 1 ;
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from td_user
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xinhuanet.hylanda.model.entity.User" >
+    insert into td_user (id, crt_ts, email, 
+      password, phone, realname, 
+      salt, status, username
+      )
+    values (#{id,jdbcType=BIGINT}, #{crtTs,jdbcType=TIMESTAMP}, #{email,jdbcType=VARCHAR}, 
+      #{password,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, #{realname,jdbcType=VARCHAR}, 
+      #{salt,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, #{username,jdbcType=VARCHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.xinhuanet.hylanda.model.entity.User" >
+    update td_user
+    set crt_ts = #{crtTs,jdbcType=TIMESTAMP},
+      email = #{email,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      phone = #{phone,jdbcType=VARCHAR},
+      realname = #{realname,jdbcType=VARCHAR},
+      salt = #{salt,jdbcType=VARCHAR},
+      status = #{status,jdbcType=VARCHAR},
+      username = #{username,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select id, crt_ts, email, password, phone, realname, salt, status, username
+    from td_user
+    where id = #{id,jdbcType=BIGINT}
   </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, crt_ts, email, password, phone, realname, salt, status, username
+    from td_user
+  </select>
+
+  <select id="getByUserName" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select id, crt_ts, email, password, phone, realname, salt, status, username
+    from td_user
+    where username = #{username,jdbcType=VARCHAR}
+  </select>
+
 
 </mapper>

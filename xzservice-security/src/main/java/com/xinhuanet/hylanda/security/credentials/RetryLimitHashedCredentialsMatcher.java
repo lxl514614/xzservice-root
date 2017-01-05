@@ -10,7 +10,7 @@ import org.apache.shiro.cache.CacheManager;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * <p>User: Zhang Kaitao
+ * <p>User: Lee XL
  * <p>Date: 14-1-28
  * <p>Version: 1.0
  */

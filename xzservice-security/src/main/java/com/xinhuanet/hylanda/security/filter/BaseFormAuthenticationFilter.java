@@ -84,7 +84,7 @@ public class BaseFormAuthenticationFilter extends FormAuthenticationFilter {
 				|| request.getParameter("ajax") == null) {// 不是ajax请求
 			httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + this.getSuccessUrl());
 		} else {
-			httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/login/timeout/success");
+			httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/login");
 		}
 
 		return false;

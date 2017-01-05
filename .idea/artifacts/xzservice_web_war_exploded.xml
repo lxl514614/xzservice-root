@@ -19,6 +19,9 @@
           <element id="archive" name="xzservice-common-1.0-SNAPSHOT.jar">
             <element id="module-output" name="xzservice-common" />
           </element>
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.3" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.4" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.9" />
           <element id="archive" name="xzservice-security-1.0-SNAPSHOT.jar">
             <element id="module-output" name="xzservice-security" />
           </element>
@@ -58,7 +61,6 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.6.6" />
           <element id="library" level="project" name="Maven: org.apache.velocity:velocity:1.7" />
           <element id="library" level="project" name="Maven: org.apache.velocity:velocity-tools:2.0" />
-          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.7.0" />
           <element id="library" level="project" name="Maven: commons-digester:commons-digester:1.8" />
           <element id="library" level="project" name="Maven: commons-chain:commons-chain:1.1" />
           <element id="library" level="project" name="Maven: commons-validator:commons-validator:1.3.1" />

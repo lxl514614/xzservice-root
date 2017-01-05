@@ -9,6 +9,7 @@
         <module name="xzservice-common" />
         <module name="xzservice-dao" />
         <module name="xzservice-model" />
+        <module name="xzservice-mvc" />
         <module name="xzservice-security" />
         <module name="xzservice-service" />
         <module name="xzservice-web" />

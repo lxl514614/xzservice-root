@@ -2,11 +2,7 @@ package com.xinhuanet.hylanda.model.entity;
 
 import java.util.Date;
 
-/**
- * Created by Administrator on 2016/12/13.
- */
 public class Role {
-
     private Long id;
 
     private Date crtTs;
@@ -55,4 +51,5 @@ public class Role {
 
     public void setCode(String code) {
         this.code = code == null ? null : code.trim();
-    }}
+    }
+}

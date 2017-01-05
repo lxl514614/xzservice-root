@@ -26,23 +26,25 @@ public class LoginController extends BaseController {
     }
 
     @RequestMapping (value = "/login", method = {RequestMethod.POST})
-    public String login(HttpServletRequest req, HttpServletResponse res, Model model, String username, String password) {
+    public String login(HttpServletRequest req, HttpServletResponse res, Model model, String username, String password) throws Exception {
 
-        if (StringUtils.isBlank(username) || StringUtils.isBlank(password)) {
-
-            model.addAttribute("message", "请输入用户名和密码!!");
-
-            return "login/login";
+        // shiro在认证过程中出现错误后将异常类路径通过request返回
+        String exceptionClassName = (String) req
+                .getAttribute("shiroLoginFailure");
+        if(exceptionClassName!=null){
+            if (UnknownAccountException.class.getName().equals(exceptionClassName)){
+                model.addAttribute("message","账号不存在");
+            } else if (IncorrectCredentialsException.class.getName().equals(
+                    exceptionClassName)) {
+                model.addAttribute("message","用户名/密码错误");
+            } else if("randomCodeError".equals(exceptionClassName)){
+                model.addAttribute("message","验证码错误");
+            } else{
+                throw new Exception();//最终在异常处理器生成未知错误
+            }
         }
 
-        if (!username.equals("admin") || !password.equals("admin")) {
-            model.addAttribute("message", "用户名或密码错误!!");
-
-            return "login/login";
-        }
-        else {
-            return "redirect:/index";
-        }
+        return "/login/login";
     }
 
     @RequestMapping (value = "/logout")

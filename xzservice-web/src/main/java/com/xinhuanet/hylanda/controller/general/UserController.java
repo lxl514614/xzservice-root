@@ -46,7 +46,7 @@ public class UserController extends BaseController {
     @RequestMapping (value = "/list")
     public String userList(Model model, HttpServletRequest req, HttpServletResponse response) {
 
-        List<User> userList = userService.getUserList();
+        List<User> userList = userService.getAllUser();
 
         model.addAttribute("userList", userList);
 

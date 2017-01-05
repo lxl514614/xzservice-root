@@ -1,7 +1,10 @@
 package com.xinhuanet.hylanda.controller;
 
+import com.xinhuanet.hylanda.dao.UserMapper;
+import com.xinhuanet.hylanda.model.entity.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -18,6 +21,9 @@ public class IndexController {
      * 日志
      */
     Logger logger = LoggerFactory.getLogger(getClass());
+
+    @Autowired
+    private UserMapper userMapper;
 
     @RequestMapping (value = "/index/{name}")
     public String index(@PathVariable String name, Model model) {
@@ -36,6 +42,10 @@ public class IndexController {
 
 
         // 主页业务
+
+        User user = userMapper.getByUserName("test_xl");
+
+        System.out.println(user.getUsername());
 
 
         return "/index/home";
