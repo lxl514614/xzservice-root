@@ -1,6 +1,6 @@
 package com.xinhuanet.hylanda.controller.general;
 
-import com.xinhuanet.hylanda.controller.base.BaseController;
+import com.xinhuanet.hylanda.BaseController;
 import com.xinhuanet.hylanda.model.entity.Role;
 import com.xinhuanet.hylanda.service.general.IRoleService;
 import org.slf4j.Logger;

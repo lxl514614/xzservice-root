@@ -1,8 +1,6 @@
 package com.xinhuanet.hylanda.controller;
 
-import com.xinhuanet.hylanda.controller.base.BaseController;
-import org.apache.commons.lang.StringUtils;
-import org.apache.ibatis.annotations.Param;
+import com.xinhuanet.hylanda.BaseController;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.springframework.stereotype.Controller;

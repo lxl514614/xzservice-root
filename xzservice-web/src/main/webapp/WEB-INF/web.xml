@@ -19,6 +19,7 @@
 		<param-value>
 			classpath:spring/applicationContext.xml,
 			classpath:spring/applicationContext-shiro.xml
+			classpath:spring/applicationContext-redis.xml
 		</param-value>
 	</context-param>
 	<listener>

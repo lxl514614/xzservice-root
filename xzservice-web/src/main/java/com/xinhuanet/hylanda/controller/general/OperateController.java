@@ -1,6 +1,6 @@
 package com.xinhuanet.hylanda.controller.general;
 
-import com.xinhuanet.hylanda.controller.base.BaseController;
+import com.xinhuanet.hylanda.BaseController;
 import com.xinhuanet.hylanda.model.entity.Operate;
 import com.xinhuanet.hylanda.service.general.IOperateService;
 import org.slf4j.Logger;
@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Controller
 @RequestMapping (value = "/operate")
-public class OperateController extends BaseController{
+public class OperateController extends BaseController {
 
     /**
      * 日志
