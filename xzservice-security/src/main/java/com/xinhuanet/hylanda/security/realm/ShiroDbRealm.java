@@ -1,11 +1,19 @@
 package com.xinhuanet.hylanda.security.realm;
 
 import com.alibaba.druid.util.StringUtils;
+import com.sun.tools.classfile.Opcode;
 import com.xinhuanet.hylanda.common.utils.Digests;
 import com.xinhuanet.hylanda.common.utils.Encodes;
+import com.xinhuanet.hylanda.dao.OperateMapper;
+import com.xinhuanet.hylanda.dao.RoleMapper;
 import com.xinhuanet.hylanda.dao.UserMapper;
+import com.xinhuanet.hylanda.model.entity.Role;
 import com.xinhuanet.hylanda.model.entity.User;
+import com.xinhuanet.hylanda.service.general.IOperateService;
+import com.xinhuanet.hylanda.service.general.IRoleService;
+import com.xinhuanet.hylanda.service.general.IUserService;
 import org.apache.commons.collections.CollectionUtils;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -18,9 +26,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.InputStream;
-import java.util.Collection;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
 
 /**
  * Created by Administrator on 2016/12/9.
@@ -35,7 +41,13 @@ public class ShiroDbRealm extends AuthorizingRealm {
 
 
     @Autowired
-    private UserMapper userMapper;
+    private IUserService userService;
+
+    @Autowired
+    private IRoleService roleService;
+
+    @Autowired
+    private IOperateService operateService;
 
     /**
      * 给ShiroDbRealm提供编码信息，用于密码密码比对
@@ -58,7 +70,7 @@ public class ShiroDbRealm extends AuthorizingRealm {
 
         UsernamePasswordToken token = (UsernamePasswordToken)authcToken;
 
-        User user = userMapper.getByUserName(token.getUsername());
+        User user = userService.getByUserName(token.getUsername());
         if (user != null) {
             if (user.getStatus().equals("disabled")) {
                 throw new DisabledAccountException();
@@ -72,6 +84,7 @@ public class ShiroDbRealm extends AuthorizingRealm {
             // 这里可以缓存认证
             SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(shiroUser, user.getPassword(),
                     ByteSource.Util.bytes(salt), getName());
+
             return info;
         } else {
             return null;
@@ -89,14 +102,18 @@ public class ShiroDbRealm extends AuthorizingRealm {
         if (CollectionUtils.isEmpty(collection)) {
             return null;
         }
-        ShiroUser shiroUser = (ShiroUser) collection.iterator().next();
+//        ShiroUser shiroUser = (ShiroUser) collection.iterator().next();
 
-//        List<UserRole> userRoles = userRoleService.find(shiroUser.getId());
-//        List<OrganizationRole> organizationRoles = organizationRoleService
-//                .find(shiroUser.getUser().getOrganization().getId());
-//
+        ShiroUser shiroUser = (ShiroUser) principals.getPrimaryPrincipal();
+
+        Long userId = shiroUser.getId();
+
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
-//        info.addStringPermissions(makePermissions(userRoles, organizationRoles, shiroUser));
+
+        // 获取角色信息
+        info.setRoles(userService.findRoles(userId));
+        // 获取权限信息
+        info.setStringPermissions(userService.findPermissions(userId));
 
         return info;
     }

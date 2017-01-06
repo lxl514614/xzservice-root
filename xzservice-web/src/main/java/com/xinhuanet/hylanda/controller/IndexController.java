@@ -2,6 +2,7 @@ package com.xinhuanet.hylanda.controller;
 
 import com.xinhuanet.hylanda.dao.UserMapper;
 import com.xinhuanet.hylanda.model.entity.User;
+import org.apache.shiro.authz.annotation.RequiresRoles;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +27,7 @@ public class IndexController {
     private UserMapper userMapper;
 
     @RequestMapping (value = "/index/{name}")
+    @RequiresRoles("admin")
     public String index(@PathVariable String name, Model model) {
 
 

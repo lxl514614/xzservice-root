@@ -166,7 +166,7 @@
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-annotations</artifactId>
-                <version>2.0.0</version>
+                <version>2.4.4</version>
             </dependency>
 
             <dependency>
@@ -179,6 +179,12 @@
                 <groupId>org.codehaus.jackson</groupId>
                 <artifactId>jackson-mapper-lgpl</artifactId>
                 <version>1.9.6</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.4.4</version>
             </dependency>
 
             <dependency>

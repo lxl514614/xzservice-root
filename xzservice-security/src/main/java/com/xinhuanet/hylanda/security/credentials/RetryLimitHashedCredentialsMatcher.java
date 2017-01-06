@@ -10,6 +10,7 @@ import org.apache.shiro.cache.CacheManager;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * 账号密码认证,采用hash认证.
  * <p>User: Lee XL
  * <p>Date: 14-1-28
  * <p>Version: 1.0

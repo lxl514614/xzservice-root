@@ -19,14 +19,30 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class LoginController extends BaseController {
 
+    /**
+     * 跳转到登录页面
+     * @param req
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "/login", method = {RequestMethod.GET})
     public String showLoginForm(HttpServletRequest req, Model model) {
 
         return "login/login";
     }
 
+    /**
+     * 登录失败,信息响应
+     * @param req
+     * @param res
+     * @param model
+     * @param username
+     * @param password
+     * @return
+     * @throws Exception
+     */
     @RequestMapping (value = "/login", method = {RequestMethod.POST})
-    public String login(HttpServletRequest req, HttpServletResponse res, Model model, String username, String password) throws Exception {
+    public String loginfail(HttpServletRequest req, HttpServletResponse res, Model model, String username, String password) throws Exception {
 
         // shiro在认证过程中出现错误后将异常类路径通过request返回
         String exceptionClassName = (String) req
@@ -40,13 +56,20 @@ public class LoginController extends BaseController {
             } else if("randomCodeError".equals(exceptionClassName)){
                 model.addAttribute("message","验证码错误");
             } else{
-                throw new Exception();//最终在异常处理器生成未知错误
+                model.addAttribute("message","登录失败!");
+//                throw new Exception();//最终在异常处理器生成未知错误
             }
         }
 
         return "/login/login";
     }
 
+    /**
+     * 登出入口
+     * @param req
+     * @param res
+     * @return
+     */
     @RequestMapping (value = "/logout")
     public  String logout(HttpServletRequest req, HttpServletResponse res) {
 

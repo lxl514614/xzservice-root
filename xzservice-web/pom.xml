@@ -38,6 +38,12 @@
             <artifactId>xzservice-security</artifactId>
             <version>${project.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.xinhuanet.hylanda</groupId>
+            <artifactId>xzservice-mvc</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

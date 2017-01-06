@@ -69,6 +69,12 @@
     <!-- 启动Spring MVC的注解功能，完成请求和注解POJO的映射 -->
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
 
+    <!-- swagger配置 -->
+    <bean class="com.xinhuanet.hylanda.mvc.SwaggerConfig" />
+
+    <!-- 所有swagger目录的访问，直接访问location指定的目录 -->
+    <mvc:resources mapping="/swagger/**" location="/WEB-INF/swagger/"/>
+
     <!-- 视图解析器 -->
     <!-- template view -->
     <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
