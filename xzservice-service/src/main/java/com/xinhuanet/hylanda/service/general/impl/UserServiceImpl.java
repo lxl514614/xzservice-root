@@ -3,6 +3,7 @@ package com.xinhuanet.hylanda.service.general.impl;
 import com.xinhuanet.hylanda.dao.UserMapper;
 import com.xinhuanet.hylanda.model.entity.Role;
 import com.xinhuanet.hylanda.model.entity.User;
+import com.xinhuanet.hylanda.nosql.jedis.JedisClient;
 import com.xinhuanet.hylanda.service.general.IRoleService;
 import com.xinhuanet.hylanda.service.general.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;

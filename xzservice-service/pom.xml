@@ -35,6 +35,12 @@
             <artifactId>xzservice-common</artifactId>
             <version>${project.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.xinhuanet.hylanda</groupId>
+            <artifactId>xzservice-nosql</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xinhuanet.hylanda.dao.UserRoleMapper" >
+  <resultMap id="BaseResultMap" type="com.xinhuanet.hylanda.model.entity.UserRole" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="crt_ts" property="crtTs" jdbcType="TIMESTAMP" />
+    <result column="update_ts" property="updateTs" jdbcType="TIMESTAMP" />
+    <result column="role_id" property="roleId" jdbcType="BIGINT" />
+    <result column="user_id" property="userId" jdbcType="BIGINT" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from tr_user_role
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xinhuanet.hylanda.model.entity.UserRole" >
+    insert into tr_user_role (id, crt_ts, update_ts, 
+      role_id, user_id)
+    values (#{id,jdbcType=BIGINT}, #{crtTs,jdbcType=TIMESTAMP}, #{updateTs,jdbcType=TIMESTAMP}, 
+      #{roleId,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.xinhuanet.hylanda.model.entity.UserRole" >
+    update tr_user_role
+    set crt_ts = #{crtTs,jdbcType=TIMESTAMP},
+      update_ts = #{updateTs,jdbcType=TIMESTAMP},
+      role_id = #{roleId,jdbcType=BIGINT},
+      user_id = #{userId,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select id, crt_ts, update_ts, role_id, user_id
+    from tr_user_role
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, crt_ts, update_ts, role_id, user_id
+    from tr_user_role
+  </select>
+
+  <select id="findUserRoleByUserId" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select id, crt_ts, update_ts, role_id, user_id
+    from tr_user_role
+    where user_id = #{userId,jdbcType=BIGINT}
+  </select>
+
+</mapper>

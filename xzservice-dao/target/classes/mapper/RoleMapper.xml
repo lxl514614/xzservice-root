@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xinhuanet.hylanda.dao.RoleMapper" >
+  <resultMap id="BaseResultMap" type="com.xinhuanet.hylanda.model.entity.Role" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="crt_ts" property="crtTs" jdbcType="TIMESTAMP" />
+    <result column="update_ts" property="updateTs" jdbcType="TIMESTAMP" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="code" property="code" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from td_role
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xinhuanet.hylanda.model.entity.Role" >
+    insert into td_role (id, crt_ts, update_ts, 
+      name, code)
+    values (#{id,jdbcType=BIGINT}, #{crtTs,jdbcType=TIMESTAMP}, #{updateTs,jdbcType=TIMESTAMP}, 
+      #{name,jdbcType=VARCHAR}, #{code,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.xinhuanet.hylanda.model.entity.Role" >
+    update td_role
+    set crt_ts = #{crtTs,jdbcType=TIMESTAMP},
+      update_ts = #{updateTs,jdbcType=TIMESTAMP},
+      name = #{name,jdbcType=VARCHAR},
+      code = #{code,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select id, crt_ts, update_ts, name, code
+    from td_role
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, crt_ts, update_ts, name, code
+    from td_role
+  </select>
+</mapper>

@@ -1,0 +1,43 @@
+<div id="bottom_warnDiv" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h5 class="modal-title" id="myModalLabel">提示信息</h5>
+            </div>
+            <!-- /.modal-header -->
+            <div class="modal-body">
+                <p id="bottom_warnMessage">
+
+                </p>
+            </div>
+            <!-- /.modal-body -->
+            ##<div class="modal-footer">
+            ##    <button type="button" class="btn btn-default btn-blue" data-dismiss="modal">确定</button>
+            ##</div>
+            <!-- /.modal-footer -->
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<script type="text/javascript">
+    function alert(str){
+        $('#bottom_warnMessage').html(str);
+        $('#bottom_warnDiv').modal({
+            keyboard: false
+        });
+    }
+</script>
+<div id="footer" style="">
+    <p>
+        炫知-传播力
+        <span class="font-grey-4">|</span>
+        <a href="http://www.baidu.com" target="_blank">访问主页</a>
+        <span class="font-grey-4">|</span>
+        <a href="#">@2014-2020</a>
+    </p>
+    <a href="#" class="gototop">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+</div>

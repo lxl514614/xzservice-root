@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:util="http://www.springframework.org/schema/util"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="
+					    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       					http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+       					http://www.springframework.org/schema/aop  http://www.springframework.org/schema/aop/spring-aop.xsd"
+	   default-lazy-init="true">
+
+	<description>Shiro安全配置</description>
+
+
+	<!-- 用户授权信息Cache, 采用EhCache -->
+
+	<bean id="shiroEhcacheManager" class="org.apache.shiro.cache.ehcache.EhCacheManager">
+		<property name="cacheManagerConfigFile" value="classpath:config/ehcache-shiro.xml"/>
+	</bean>
+
+	<!-- 凭证匹配器 -->
+	<bean id="credentialsMatcher" class="com.xinhuanet.hylanda.security.credentials.RetryLimitHashedCredentialsMatcher">
+		<constructor-arg ref="shiroEhcacheManager"/>
+		<property name="hashAlgorithmName" value="SHA-1"/>
+		<property name="hashIterations" value="1024"/>
+		<property name="storedCredentialsHexEncoded" value="true"/>
+	</bean>
+	<!--<bean id="credentialsMatcher" class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">-->
+		<!--<property name="hashAlgorithmName" value="MD5"/>-->
+	<!--</bean>-->
+
+	<!-- 項目自定义的Realm -->
+	<bean id="shiroDbRealm" class="com.xinhuanet.hylanda.security.realm.ShiroDbRealm">
+		<property name="credentialsMatcher" ref="credentialsMatcher"/>
+		<property name="cachingEnabled" value="false"/>
+	</bean>
+
+	<!-- Shiro's main business-tier object for web-enabled applications -->
+	<!-- 定义Shiro安全管理配置 -->
+	<bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+		<property name="realm" ref="shiroDbRealm"/>
+		<property name="cacheManager" ref="shiroEhcacheManager"/>
+	</bean>
+
+	<bean id="sysUserFilter" class="com.xinhuanet.hylanda.security.filter.SysUserFilter"/>
+
+	<!-- Shiro Filter -->
+	<!-- Shiro的Web过滤器 -->
+	<bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+		<!-- Shiro的核心安全接口，这个属性是必须的 -->
+		<property name="securityManager" ref="securityManager"/>
+		<!-- 登录成功后要跳转的连接-->
+		<property name="successUrl" value="/index/"/>
+		<!-- 要求登录时的链接(登录页面地址)，非必须的属性，默认会自动寻找Web工程根目录下的"/login.jsp"页面 -->
+		<property name="loginUrl" value="/login"/>
+		<!-- 用户访问未对其授权的资源时，所显示的连接 -->
+		<property name="unauthorizedUrl" value="/"></property>
+		<property name="filterChainDefinitions">
+			<ref bean="shiroFilterChainDefinitions"/>
+		</property>
+	</bean>
+
+	<!-- shiro权限过滤 -->
+	<!-- Shiro权限过滤过滤器定义 -->
+	<bean name="shiroFilterChainDefinitions" class="java.lang.String">
+		<constructor-arg>
+			<value>
+				/static/** = anon
+				/test/** = anon
+				/login = authc
+				/index/** = authc
+				/user/** = authc
+			</value>
+		</constructor-arg>
+	</bean>
+
+	<!-- 保证实现了Shiro内部lifecycle函数的bean执行 -->
+	<!-- Shiro生命周期处理器-->
+	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+</beans>

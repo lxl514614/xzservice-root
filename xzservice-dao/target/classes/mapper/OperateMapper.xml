@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xinhuanet.hylanda.dao.OperateMapper" >
+  <resultMap id="BaseResultMap" type="com.xinhuanet.hylanda.model.entity.Operate" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="crt_ts" property="crtTs" jdbcType="TIMESTAMP" />
+    <result column="update_ts" property="updateTs" jdbcType="TIMESTAMP" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="code" property="code" jdbcType="VARCHAR" />
+    <result column="menu_code" property="menuCode" jdbcType="VARCHAR" />
+    <result column="action" property="action" jdbcType="VARCHAR" />
+    <result column="is_role" property="isRole" jdbcType="TINYINT" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from td_operate
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xinhuanet.hylanda.model.entity.Operate" >
+    insert into td_operate (id, crt_ts, update_ts, 
+      name, code, menu_code, 
+      action, is_role)
+    values (#{id,jdbcType=BIGINT}, #{crtTs,jdbcType=TIMESTAMP}, #{updateTs,jdbcType=TIMESTAMP}, 
+      #{name,jdbcType=VARCHAR}, #{code,jdbcType=VARCHAR}, #{menuCode,jdbcType=VARCHAR}, 
+      #{action,jdbcType=VARCHAR}, #{isRole,jdbcType=TINYINT})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.xinhuanet.hylanda.model.entity.Operate" >
+    update td_operate
+    set crt_ts = #{crtTs,jdbcType=TIMESTAMP},
+      update_ts = #{updateTs,jdbcType=TIMESTAMP},
+      name = #{name,jdbcType=VARCHAR},
+      code = #{code,jdbcType=VARCHAR},
+      menu_code = #{menuCode,jdbcType=VARCHAR},
+      action = #{action,jdbcType=VARCHAR},
+      is_role = #{isRole,jdbcType=TINYINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select id, crt_ts, update_ts, name, code, menu_code, action, is_role
+    from td_operate
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, crt_ts, update_ts, name, code, menu_code, action, is_role
+    from td_operate
+  </select>
+</mapper>

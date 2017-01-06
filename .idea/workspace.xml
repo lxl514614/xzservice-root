@@ -2,107 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15fa8ebd-d606-4117-924b-67c241ce5444" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/fonts/DroidSans-Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/fonts/DroidSans.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/images/collapse.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/images/expand.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/images/explorer_icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/images/favicon-16x16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/images/favicon-32x32.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/images/logo_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/images/pet_store_api.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/images/throbber.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/images/wordnik_api.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mangofactory_swagger_models_1_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mangofactory_swagger_springmvc_1_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_wordnik_swagger_annotations_1_3_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/RoleOperateMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/UserRoleMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/RoleOperateMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/UserRoleMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-model/src/main/java/com/xinhuanet/hylanda/model/entity/RoleOperate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-model/src/main/java/com/xinhuanet/hylanda/model/entity/UserRole.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-mvc/src/main/java/App.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-mvc/src/main/java/com/xinhuanet/hylanda/mvc/SwaggerConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/css/print.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/css/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/css/screen.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/css/typography.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/geo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/ko-kr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/translator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lang/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/backbone-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/es5-shim.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/handlebars-4.0.5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/highlight.9.1.0.pack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/highlight.9.1.0.pack_extended.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/jquery-1.8.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/jquery.ba-bbq.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/jquery.slideto.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/jquery.wiggle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/js-yaml.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/jsoneditor.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/lodash.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/marked.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/object-assign-pollyfill.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/sanitize-html.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/swagger-oauth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/o2c.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/swagger-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/swagger-ui.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/xzservice-mvc/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/xzservice-mvc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/xzservice-mvc/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_7_2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/xzservice_web_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/xzservice_web_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-common/xzservice-common.iml" afterPath="$PROJECT_DIR$/xzservice-common/xzservice-common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/UserMapper.java" afterPath="$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/UserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/UserMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-dao/xzservice-dao.iml" afterPath="$PROJECT_DIR$/xzservice-dao/xzservice-dao.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-model/xzservice-model.iml" afterPath="$PROJECT_DIR$/xzservice-model/xzservice-model.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-mvc/pom.xml" afterPath="$PROJECT_DIR$/xzservice-mvc/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-mvc/xzservice-mvc.iml" afterPath="$PROJECT_DIR$/xzservice-mvc/xzservice-mvc.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-root.iml" afterPath="$PROJECT_DIR$/xzservice-root.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-security/pom.xml" afterPath="$PROJECT_DIR$/xzservice-security/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-security/src/main/java/com/xinhuanet/hylanda/security/credentials/RetryLimitHashedCredentialsMatcher.java" afterPath="$PROJECT_DIR$/xzservice-security/src/main/java/com/xinhuanet/hylanda/security/credentials/RetryLimitHashedCredentialsMatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-security/src/main/java/com/xinhuanet/hylanda/security/realm/ShiroDbRealm.java" afterPath="$PROJECT_DIR$/xzservice-security/src/main/java/com/xinhuanet/hylanda/security/realm/ShiroDbRealm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-security/xzservice-security.iml" afterPath="$PROJECT_DIR$/xzservice-security/xzservice-security.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/IOperateService.java" afterPath="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/IOperateService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/IRoleService.java" afterPath="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/IRoleService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/IUserService.java" afterPath="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/IUserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/OperateServiceImpl.java" afterPath="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/OperateServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/RoleServiceImpl.java" afterPath="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/RoleServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-service/pom.xml" afterPath="$PROJECT_DIR$/xzservice-service/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/UserServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-service/xzservice-service.iml" afterPath="$PROJECT_DIR$/xzservice-service/xzservice-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-web/pom.xml" afterPath="$PROJECT_DIR$/xzservice-web/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/IndexController.java" afterPath="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/IndexController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/LoginController.java" afterPath="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-web/src/main/resources/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/xzservice-web/src/main/resources/spring/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-web/src/main/resources/spring/spring-servlet.xml" afterPath="$PROJECT_DIR$/xzservice-web/src/main/resources/spring/spring-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xzservice-web/xzservice-web.iml" afterPath="$PROJECT_DIR$/xzservice-web/xzservice-web.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_4.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -113,6 +27,7 @@
     <ignored path="$PROJECT_DIR$/xzservice-web/target/" />
     <ignored path="$PROJECT_DIR$/xzservice-security/target/" />
     <ignored path="$PROJECT_DIR$/xzservice-mvc/target/" />
+    <ignored path="$PROJECT_DIR$/xzservice-nosql/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,119 +44,108 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ShiroDbRealm.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/xzservice-security/src/main/java/com/xinhuanet/hylanda/security/realm/ShiroDbRealm.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="996">
-              <caret line="122" column="15" lean-forward="false" selection-start-line="122" selection-start-column="15" selection-end-line="122" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="308">
+              <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/MenuController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="28" column="44" lean-forward="false" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
               <folding>
-                <element signature="e#1132#1140#0" expanded="true" />
-                <element signature="e#1445#1453#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/RoleServiceImpl.java">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="38">
+              <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleOperateMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/RoleOperateMapper.java">
+      <file leaf-file-name="RoleController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/RoleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="19" column="60" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoleOperateMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/RoleOperateMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+            <state relative-caret-position="418">
+              <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
               <folding>
-                <marker date="1483694259537" expanded="true" signature="720:785" ph="delete from " />
-                <marker date="1483694259537" expanded="true" signature="889:1119" ph="insert into tr_role_operator... " />
-                <marker date="1483694259537" expanded="true" signature="1235:1472" ph="update tr_ro... " />
-                <marker date="1483694259537" expanded="true" signature="1582:1689" ph="select id, c... tr_role_operator" />
-                <marker date="1483694259537" expanded="true" signature="1759:1829" ph="select id, c... tr_role_operator" />
-                <marker date="1483694259537" expanded="true" signature="1941:2057" ph="select id, c... tr_role_operator" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReflectiveMethodInvocation.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.0.2.RELEASE/spring-aop-4.0.2.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionInterceptor.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.0.2.RELEASE/spring-tx-4.0.2.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionAspectSupport.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.0.2.RELEASE/spring-tx-4.0.2.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRoleMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/UserRoleMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRoleMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/UserRoleMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="41" column="45" lean-forward="false" selection-start-line="39" selection-start-column="3" selection-end-line="41" selection-end-column="45" />
+            <state relative-caret-position="376">
+              <caret line="48" column="47" lean-forward="true" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
               <folding>
-                <marker date="1483691689307" expanded="true" signature="718:779" ph="delete from " />
-                <marker date="1483691689307" expanded="true" signature="880:1110" ph="insert into tr_user_role... " />
-                <marker date="1483691689307" expanded="true" signature="1223:1460" ph="update tr_us... " />
-                <marker date="1483691689307" expanded="true" signature="1570:1675" ph="select id, c... tr_user_role" />
-                <marker date="1483691689307" expanded="true" signature="1745:1813" ph="select id, c... tr_user_role" />
-                <marker date="1483691689307" expanded="true" signature="1926:2040" ph="select id, c... tr_user_role" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext-redis.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xzservice-nosql/src/main/resources/spring/applicationContext-redis.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xzservice-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="779">
+              <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/resources/spring/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JedisClientCluster.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xzservice-nosql/src/main/java/com/xinhuanet/hylanda/nosql/jedis/JedisClientCluster.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -306,25 +210,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xzservice-dao/src/main/resources/db.data.table/data.sql" />
-        <option value="$PROJECT_DIR$/xzservice-model/src/main/java/com/xinhuanet/hylanda/model/common/PageInfo.java" />
-        <option value="$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/RoleMapper.xml" />
         <option value="$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/OperateMapper.xml" />
         <option value="$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/general/IMenuDao.java" />
         <option value="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/BaseServiceImpl.java" />
         <option value="$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/MenuMapper.xml" />
-        <option value="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/UserController.java" />
         <option value="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/security/impl/UserviceImpl.java" />
         <option value="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/security/IUserService.java" />
         <option value="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/UserviceImpl.java" />
         <option value="$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/MenuMapper.java" />
         <option value="$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/OperateMapper.java" />
         <option value="$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/RoleMapper.java" />
-        <option value="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/RoleController.java" />
         <option value="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/MenuServiceImpl.java" />
-        <option value="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/OperateController.java" />
-        <option value="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/MenuController.java" />
-        <option value="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/xzservice-security/src/main/java/com/xinhuanet/hylanda/security/realm/ShiroUser.java" />
         <option value="$PROJECT_DIR$/xzservice-common/src/main/java/com/xinhuanet/hylanda/common/utils/Exceptions.java" />
         <option value="$PROJECT_DIR$/xzservice-common/pom.xml" />
@@ -332,7 +228,6 @@
         <option value="$PROJECT_DIR$/xzservice-security/src/main/java/com/xinhuanet/hylanda/security/filter/BaseFormAuthenticationFilter.java" />
         <option value="$PROJECT_DIR$/xzservice-common/src/main/java/com/xinhuanet/hylanda/common/utils/Digests.java" />
         <option value="$PROJECT_DIR$/xzservice-security/src/main/resources/spring/applicationContext-shiro.xml" />
-        <option value="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/xzservice-security/src/main/java/com/xinhuanet/hylanda/security/credentials/RetryLimitHashedCredentialsMatcher.java" />
         <option value="$PROJECT_DIR$/xzservice-mvc/src/main/java/com/xinhuanet/hylanda/mvc/swagger/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/index.html" />
@@ -341,7 +236,6 @@
         <option value="$PROJECT_DIR$/xzservice-mvc/pom.xml" />
         <option value="$PROJECT_DIR$/xzservice-mvc/src/main/java/com/xinhuanet/hylanda/mvc/SwaggerConfig.java" />
         <option value="$PROJECT_DIR$/xzservice-web/src/main/resources/spring/spring-servlet.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/xzservice-security/pom.xml" />
         <option value="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/IUserService.java" />
         <option value="$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/UserMapper.xml" />
@@ -356,6 +250,16 @@
         <option value="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/RoleOperateMapper.xml" />
         <option value="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/RoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/xzservice-nosql/src/main/java/com/xinhuanet/hylanda/nosql/jedis/JedisClient.java" />
+        <option value="$PROJECT_DIR$/xzservice-nosql/src/main/resources/spring/applicationContext-redis.xml" />
+        <option value="$PROJECT_DIR$/xzservice-service/pom.xml" />
+        <option value="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/MenuController.java" />
+        <option value="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/RoleController.java" />
+        <option value="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/OperateController.java" />
+        <option value="$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/UserController.java" />
+        <option value="$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/UserServiceImpl.java" />
       </list>
     </option>
@@ -432,8 +336,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -448,6 +350,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -463,12 +367,8 @@
     <property name="SearchEverywhereHistoryKey" value="com/fasterxml/jackson/annotation/ObjectIdResolver&#9;FILE&#9;jar://E:/MavenRepository/com/fasterxml/jackson/core/jackson-annotations/2.4.4/jackson-annotations-2.4.4.jar!/com/fasterxml/jackson/annotation/ObjectIdResolver.class&#10;ObjectIdResolver&#9;PSI&#9;JAVA://com.fasterxml.jackson.annotation.ObjectIdResolver" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workspace\ideaworkspace\xzservice-root\xzservice-dao\src\main\java\com\xinhuanet\hylanda\dao" />
-      <recent name="D:\workspace\ideaworkspace\xzservice-root\xzservice-dao\src\main\resources\mapper" />
-      <recent name="D:\workspace\ideaworkspace\xzservice-root\xzservice-model\src\main\java\com\xinhuanet\hylanda\model\entity" />
-      <recent name="D:\workspace\ideaworkspace\xzservice-root\xzservice-web\src\main\webapp\WEB-INF\swagger" />
-      <recent name="D:\workspace\ideaworkspace\xzservice-root\xzservice-web\src\main\java\com\xinhuanet\hylanda" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\ideaworkspace\xzservice-root\xzservice-web\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.xinhuanet.hylanda.common.utils" />
@@ -477,8 +377,12 @@
       <recent name="com.xinhuanet.hylanda.security.filter" />
       <recent name="com.xinhuanet.hylanda.common.exception" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\workspace\ideaworkspace\xzservice-root\xzservice-web\src\main\webapp" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\ideaworkspace\xzservice-root\xzservice-nosql\src\main\java\com\xinhuanet\hylanda\nosql" />
+      <recent name="D:\workspace\ideaworkspace\xzservice-root\xzservice-nosql\src\main\resources\spring" />
+      <recent name="D:\workspace\ideaworkspace\xzservice-root\xzservice-dao\src\main\java\com\xinhuanet\hylanda\dao" />
+      <recent name="D:\workspace\ideaworkspace\xzservice-root\xzservice-dao\src\main\resources\mapper" />
+      <recent name="D:\workspace\ideaworkspace\xzservice-root\xzservice-model\src\main\java\com\xinhuanet\hylanda\model\entity" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.xzservice-new">
@@ -1019,6 +923,7 @@
       <workItem from="1482117036680" duration="1930000" />
       <workItem from="1483520292001" duration="23389000" />
       <workItem from="1483613091346" duration="22170000" />
+      <workItem from="1483695507738" duration="3405000" />
     </task>
     <task id="LOCAL-00001" summary="* 实现shiro权限框架.认证部分已经完成,授权部分暂未实现.">
       <created>1483610741615</created>
@@ -1027,14 +932,42 @@
       <option name="project" value="LOCAL" />
       <updated>1483610741615</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="+ 新增nosql模块,用于redis.memcached等缓存操作">
+      <created>1483697366951</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1483697366951</updated>
+    </task>
+    <task id="LOCAL-00003" summary="* 集成redis客户端,测试可用">
+      <created>1483699097733</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1483699097733</updated>
+    </task>
+    <task id="LOCAL-00004" summary="* 修改文件位置">
+      <created>1483699112786</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1483699112786</updated>
+    </task>
+    <task id="LOCAL-00005" summary="* 引用jedis客户端jar">
+      <created>1483699128172</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1483699128172</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158888000" />
+    <option name="totallyTimeSpent" value="162293000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1049,18 +982,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52608216" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21753608" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20310766" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25053534" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20310766" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2537473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1080,19 +1013,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="* 实现shiro权限框架.认证部分已经完成,授权部分暂未实现." />
-    <option name="LAST_COMMIT_MESSAGE" value="* 实现shiro权限框架.认证部分已经完成,授权部分暂未实现." />
+    <MESSAGE value="+ 新增nosql模块,用于redis.memcached等缓存操作" />
+    <MESSAGE value="* 集成redis客户端,测试可用" />
+    <MESSAGE value="* 修改文件位置" />
+    <MESSAGE value="* 引用jedis客户端jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="* 引用jedis客户端jar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/LoginController.java</url>
-          <line>47</line>
+          <line>45</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="37" />
+      <option name="time" value="41" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1101,169 +1038,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/xzservice-mvc/src/main/java/com/xinhuanet/hylanda/mvc/App.java" />
-    <entry file="file://$PROJECT_DIR$/xzservice-web/xzservice-web.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-798">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-mvc/src/main/java/com/xinhuanet/hylanda/mvc/swagger/SwaggerConfig.java" />
-    <entry file="file://$PROJECT_DIR$/xzservice-mvc/src/main/java/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/lib/marked.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.4.4/jackson-annotations-2.4.4.jar!/com/fasterxml/jackson/annotation/ObjectIdResolver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.4.4/jackson-annotations-2.4.4.jar!/com/fasterxml/jackson/annotation/SimpleObjectIdResolver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-security/src/main/java/com/xinhuanet/hylanda/security/credentials/RetryLimitHashedCredentialsMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.2.3/shiro-core-1.2.3.jar!/org/apache/shiro/authc/credential/HashedCredentialsMatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-mvc/src/main/java/com/xinhuanet/hylanda/mvc/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/swagger/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-437">
-          <caret line="61" column="39" lean-forward="true" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-mvc/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/exception/MyException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/base/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/MenuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1019">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/OperateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-981">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/RoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1285">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/resources/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
-          <caret line="29" column="48" lean-forward="true" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1287,7 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1295,7 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1303,14 +1082,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="695">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding>
-            <marker date="1483690073747" expanded="true" signature="979:1035" ph="delete from " />
-            <marker date="1483690073747" expanded="true" signature="1132:1526" ph="insert into td_user... " />
-            <marker date="1483690073747" expanded="true" signature="1635:2036" ph="update td_us... " />
-            <marker date="1483690073747" expanded="true" signature="2146:2275" ph="select id, c... td_user" />
-            <marker date="1483690073747" expanded="true" signature="2345:2437" ph="select id, c... td_user" />
-            <marker date="1483690073747" expanded="true" signature="2545:2687" ph="select id, c... td_user" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1318,7 +1090,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="290">
           <caret line="3099" column="28" lean-forward="false" selection-start-line="3099" selection-start-column="28" selection-end-line="3099" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1326,7 +1097,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1334,7 +1104,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1342,7 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1358,10 +1126,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="24" column="52" lean-forward="false" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-          <folding>
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#744#745#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1379,7 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1387,15 +1150,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1403,7 +1157,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1419,30 +1172,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.0.2.RELEASE/spring-aop-4.0.2.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-security/src/main/java/com/xinhuanet/hylanda/security/realm/ShiroDbRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/UserRoleMapper.java">
+    <entry file="file://$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/RoleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="141">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/UserRoleMapper.xml">
+    <entry file="file://$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/RoleOperateMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="41" column="45" lean-forward="false" selection-start-line="39" selection-start-column="3" selection-end-line="41" selection-end-column="45" />
-          <folding>
-            <marker date="1483691689307" expanded="true" signature="718:779" ph="delete from " />
-            <marker date="1483691689307" expanded="true" signature="880:1110" ph="insert into tr_user_role... " />
-            <marker date="1483691689307" expanded="true" signature="1223:1460" ph="update tr_us... " />
-            <marker date="1483691689307" expanded="true" signature="1570:1675" ph="select id, c... tr_user_role" />
-            <marker date="1483691689307" expanded="true" signature="1745:1813" ph="select id, c... tr_user_role" />
-            <marker date="1483691689307" expanded="true" signature="1926:2040" ph="select id, c... tr_user_role" />
-          </folding>
+        <state relative-caret-position="304">
+          <caret line="19" column="60" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/RoleOperateMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1456,7 +1224,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.0.2.RELEASE/spring-tx-4.0.2.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
+        <state relative-caret-position="512">
           <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
@@ -1470,60 +1238,212 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.0.2.RELEASE/spring-aop-4.0.2.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
+    <entry file="file://$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/UserRoleMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="20" column="46" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/RoleOperateMapper.xml">
+    <entry file="file://$PROJECT_DIR$/xzservice-dao/src/main/resources/mapper/UserRoleMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="41" column="28" lean-forward="false" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+        <state relative-caret-position="487">
+          <caret line="41" column="45" lean-forward="false" selection-start-line="39" selection-start-column="3" selection-end-line="41" selection-end-column="45" />
           <folding>
-            <marker date="1483694259537" expanded="true" signature="720:785" ph="delete from " />
-            <marker date="1483694259537" expanded="true" signature="889:1119" ph="insert into tr_role_operator... " />
-            <marker date="1483694259537" expanded="true" signature="1235:1472" ph="update tr_ro... " />
-            <marker date="1483694259537" expanded="true" signature="1582:1689" ph="select id, c... tr_role_operator" />
-            <marker date="1483694259537" expanded="true" signature="1759:1829" ph="select id, c... tr_role_operator" />
-            <marker date="1483694259537" expanded="true" signature="1941:2057" ph="select id, c... tr_role_operator" />
+            <marker date="1483695495111" expanded="true" signature="1926:2040" ph="select id, c... tr_user_role" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-dao/src/main/java/com/xinhuanet/hylanda/dao/RoleOperateMapper.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="19" column="60" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="60" />
+        <state relative-caret-position="190">
+          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/RoleServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/xzservice-root.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        <state relative-caret-position="-1099">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/exception/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/base/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-nosql/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="275" column="47" lean-forward="false" selection-start-line="275" selection-start-column="47" selection-end-line="275" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.0.2.RELEASE/spring-beans-4.0.2.RELEASE.jar!/org/springframework/beans/factory/xml/spring-beans-2.0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="531" column="4" lean-forward="false" selection-start-line="531" selection-start-column="4" selection-end-line="531" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-nosql/src/main/java/com/xinhuanet/hylanda/nosql/jedis/JedisClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-nosql/src/main/java/com/xinhuanet/hylanda/nosql/jedis/JedisClientCluster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-nosql/src/main/java/com/xinhuanet/hylanda/nosql/jedis/JedisClientPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-nosql/src/main/java/com/xinhuanet/hylanda/nosql/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.7.2/jedis-2.7.2.jar!/redis/clients/jedis/JedisPool.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/resources/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-nosql/src/main/resources/spring/applicationContext-redis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="41" column="39" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="28" column="44" lean-forward="false" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/OperateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xzservice-web/src/main/java/com/xinhuanet/hylanda/controller/general/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="48" column="47" lean-forward="true" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xzservice-service/src/main/java/com/xinhuanet/hylanda/service/general/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="e#1132#1140#0" expanded="true" />
-            <element signature="e#1445#1453#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xzservice-security/src/main/java/com/xinhuanet/hylanda/security/realm/ShiroDbRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="996">
-          <caret line="122" column="15" lean-forward="false" selection-start-line="122" selection-start-column="15" selection-end-line="122" selection-end-column="15" />
+        <state relative-caret-position="308">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>
