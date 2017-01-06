@@ -17,6 +17,7 @@
         <module>xzservice-common</module>
         <module>xzservice-security</module>
         <module>xzservice-mvc</module>
+        <module>xzservice-nosql</module>
     </modules>
 
     <properties>
@@ -268,6 +269,13 @@
                 <groupId>javax.servlet</groupId>
                 <artifactId>javax.servlet-api</artifactId>
                 <version>3.0.1</version>
+            </dependency>
+
+            <!-- Redis客户端 -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>2.7.2</version>
             </dependency>
 
         </dependencies>
