@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>上稿管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="$link.contextPath/static/third/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="$link.contextPath/static/third/bootstrap-time/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="$link.contextPath/static/third/dataTables/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="$link.contextPath/static/css/showBo.css">
+    <link rel="stylesheet" href="$link.contextPath/static/css/style.css">
+    <link rel="stylesheet" href="$link.contextPath/static/css/previewForm.css"> <!--新添加-->
+    <script src="$link.contextPath/static/third/jquery/jquery.min.js"></script>
+    <script src="$link.contextPath/static/third/bootstrap/js/bootstrap.min.js"></script>
+    <script src="$link.contextPath/static/third/bootstrap-time/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="$link.contextPath/static/third/dataTables/js/jquery.dataTables.min.js"></script>
+    <script src="$link.contextPath/static/third/dataTables/js/dataTables.bootstrap.min.js"></script>
+    <script src="$link.contextPath/static/js/showBo.js"></script>
+    <script src="$link.contextPath/static/js/Ajax.js"></script>
+    <script src="$link.contextPath/static/js/common.js"></script>
+    <script src="$link.contextPath/static/js/previewForm.js"></script> <!--新添加-->
+</head>
+<body class="ms">
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">中央网信办新闻督查系统</a>
+        </div>
+    </div>
+</div>
+<div class="header-search">
+    <form class="navbar-form navbar-right" role="search">
+        <label class="control-label website-search">站内检索</label>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+        </div>
+    </form>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="/index" data-target="#collapseOne" class="news-query">新闻辅助巡查</a>
+                            <input type="hidden" class="news-class-child">
+                            <span class="glyphicon glyphicon-chevron-down first-menu-icon"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse">
+                        <div class="panel-body second-menu">
+                            <h3  class="panel-title ">
+                                <a href="javascript:;" data-toggle="collapse" data-target="#more-website"><span class="second-menu-icon">+</span>多网站巡查</a>
+                            </h3>
+                            <div id="more-website" class="collapse second-menu-list"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="javascript:;" data-target="#collapseTwo">上稿管理</a>
+                            <span class="glyphicon glyphicon-chevron-up first-menu-icon"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse in">
+                        <!--修改-begin-->
+                        <div class="panel-body second-menu">
+                            <h3 class="panel-title">
+                                <a href="/uper/list">管理任务</a>
+                            </h3>
+                            <h3 class="panel-title focusCurrent">
+                                <a href="javascript:;" data-toggle="tab" data-target="#create-task">创建任务</a>
+                            </h3>
+                        </div>
+                        <!--修改-end-->
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="/under/list" data-target="#collapseThree">下稿管理</a>
+                            <span class="glyphicon glyphicon-chevron-up first-menu-icon"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>创建任务</p>
+                            <p>管理任务</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main upload-manag tab-content"  id="myTabContent">
+            <div class="tab-pane fade active in" id="create-task">
+                <div class="page-header">
+                    <h3>创建任务</h3>
+                </div>
+                <form class="form-horizontal" role="form" style="width: 80%;" id="myform" method="post" action="">
+                    <div class="form-group">
+                        <label for="news-link" class="col-sm-2 control-label">新闻链接:</label>
+                        <div class="col-sm-10">
+                            <input name="newsLink" type="text" class="form-control news-url" id="news-link" placeholder="请输入新闻链接">
+                            <button type="button" class="btn btn-default obtain-btn">提取</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="news-title" class="col-sm-2 control-label">新闻标题:</label>
+                        <div class="col-sm-10">
+                            <input name="newsTitle" type="text" class="form-control " id="news-title" placeholder="请输入新闻标题">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="news-content" class="col-sm-2 control-label">内容文本:</label>
+                        <div class="col-sm-10">
+                            <textarea name="newsContent" class="form-control" rows="3" id="news-content" placeholder="输入内容" ></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="col-sm-2 control-label">上稿对象:</span>
+                        <div class="col-sm-10">
+                            <div class="checkbox">
+                                <label for="select-all">
+                                    <input name="all" type="checkbox" value="全选" id="select-all">全选
+                                </label>
+                            </div>
+                            <label for="center-site" class="checkbox-inline">
+                                <input name="centralSite" type="checkbox" value="中央网站" id="center-site">中央网站
+                            </label>
+                            <label for="local-site" class="checkbox-inline">
+                                <input name="localSite" type="checkbox" value="地方新闻网站" id="local-site">地方新闻网站
+                            </label>
+                            <label for="gov-site" class="checkbox-inline">
+                                <input name="govSite" type="checkbox" value="商业网站" id="gov-site">商业网站
+                            </label>
+                            <label for="w-site" class="checkbox-inline">
+                                <input name="wSite" type="checkbox" value="微博 、微信、客户端" id="w-site">微博 、微信、客户端
+                            </label>
+                        </div>
+                        <div class="col-sm-10 col-sm-offset-2" style="margin-top: 5px;">
+                            <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">自定义</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="col-sm-2 control-label">上稿位置:</span>
+                        <div class="col-sm-10">
+                            <label for="pc-top" class="checkbox-inline">
+                                <input name="pc-focusNewsNum" type="checkbox" value="PC端（双）首页要闻区" id="pc-top">PC端（双）首页要闻区
+                            </label>
+                            <label for="local-detail" class="checkbox-inline">
+                                <input name="localDetail" type="text" placeholder="请输入详细位置" id="local-detail">
+                            </label>
+                            <label for="pc-local" class="checkbox-inline">
+                                <input name="pc-focusNewsLocal" type="checkbox" value="PC端（双）首页要闻区显著位置" id="pc-local">PC端（双）首页要闻区显著位置
+                            </label>
+                            <label for="mobile-top" class="checkbox-inline">
+                                <input name="mobile-topLine" type="checkbox" value="移动端首屏头条" id="mobile-top">移动端首屏头条
+                            </label>
+                            <label for="pc" class="checkbox-inline">
+                                <input name="pc" type="checkbox" value="PC端频道" id="pc">PC端<input name="pc-channel" type="text" placeholder="请输入频道名称" id="channel">频道
+                            </label>
+                            <label for="mobile-screen" class="checkbox-inline">
+                                <input name="mobile-home" type="checkbox" value="移动端首屏" id="mobile-screen">移动端首屏
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="col-sm-2 control-label">时间:</span>
+                        <div class="col-sm-10">
+                            <label for="hover-12" class="checkbox-inline">
+                                <input name="12hover" type="checkbox" value="12小时" id="hover-12">12小时
+                            </label>
+                            <label for="hover-24" class="checkbox-inline">
+                                <input name="24hover" type="checkbox" value="24小时" id="hover-24">24小时
+                            </label>
+                            <label for="hover-48" class="checkbox-inline">
+                                <input name="48hover" type="checkbox" value="48小时" id="hover-48">48小时
+                            </label>
+                        </div>
+                        <div class="col-sm-10 col-sm-offset-2">
+                            <div class='input-group date' id='datetimepicker1'>
+                                <input type='text' class="form-control" id="time-date"/>
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <span class="col-sm-2 control-label">对应指令:</span>
+                        <div class="col-sm-10">
+                            <div class="form-group">
+                                <label for="command-number" class="col-sm-2 control-label">指令编号:</label>
+                                <div class="col-sm-10">
+                                    <input name="commandNumber" type="text" class="form-control" id="command-number">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="leadership-approval" class="col-sm-2 control-label">办领导审批:</label>
+                                <div class="col-sm-10">
+                                    <input name="leadershipApproval" type="text" class="form-control" id="leadership-approval">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="approval" class="col-sm-2 control-label">审批人:</label>
+                                <div class="col-sm-4">
+                                    <input name="approval" type="text" class="form-control" id="approval">
+                                </div>
+                                <label for="give-people" class="col-sm-2 control-label">下达人员:</label>
+                                <div class="col-sm-4">
+                                    <input name="givePeople" type="text" class="form-control" id="give-people">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" value="submit" class="btn btn-default releaseBtn">预览</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+            <div class="modal-body">
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#centerSite" data-toggle="tab">中央网站</a>
+                    </li>
+                    <li>
+                        <a href="#localSite" data-toggle="tab">地方新闻网站</a>
+                    </li>
+                    <li>
+                        <a href="#govSite" data-toggle="tab">商业网站</a>
+                    </li>
+                    <li>
+                        <a href="#wSite" data-toggle="tab">微博、微信、客户端</a>
+                    </li>
+                </ul>
+                <div id="" class="tab-content">
+                    <div class="tab-pane fade in active" id="centerSite">
+                        <div class="form-group">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="option1">新华网
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="option1">央视网
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="localSite">
+                        <div class="form-group">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="option1">河北网
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="option1">本地网
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="govSite">
+                        <div class="form-group">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="option1">河北网
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="option1">本地网
+                            </label>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="wSite">
+                        <div class="form-group">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="option1">新华网
+                            </label>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="option1">央视网
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="button" class="btn btn-primary">
+                    提交更改
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<script type="text/javascript">
+    //时间日期控件
+    $("#datetimepicker1").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+    //提交表单
+    $(document).ready(function() {
+        $('#myform').previewForm();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+com\xinhuanet\hylanda\nosql\jedis\JedisClientPool.class
+com\xinhuanet\hylanda\nosql\jedis\JedisClient.class
+com\xinhuanet\hylanda\nosql\jedis\JedisClientCluster.class
+com\xinhuanet\hylanda\nosql\App.class

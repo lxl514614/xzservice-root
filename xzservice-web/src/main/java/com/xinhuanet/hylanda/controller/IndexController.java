@@ -23,9 +23,6 @@ public class IndexController {
      */
     Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Autowired
-    private UserMapper userMapper;
-
     @RequestMapping (value = "/index/{name}")
     @RequiresRoles("admin")
     public String index(@PathVariable String name, Model model) {
@@ -41,14 +38,6 @@ public class IndexController {
 
     @RequestMapping (value = "/index")
     public String index(Model model) {
-
-
-        // 主页业务
-
-        User user = userMapper.getByUserName("test_xl");
-
-        System.out.println(user.getUsername());
-
 
         return "/index/home";
 

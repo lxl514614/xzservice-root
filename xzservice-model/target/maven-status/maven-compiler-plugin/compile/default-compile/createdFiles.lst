@@ -1,0 +1,16 @@
+com\xinhuanet\hylanda\model\entity\Role.class
+com\xinhuanet\hylanda\model\vo\monitor\TaskQuery.class
+com\xinhuanet\hylanda\model\entity\wxb\WxbTask.class
+com\xinhuanet\hylanda\model\common\Page.class
+com\xinhuanet\hylanda\model\vo\App.class
+com\xinhuanet\hylanda\model\vo\monitor\TaskResponseVO.class
+com\xinhuanet\hylanda\model\entity\User.class
+com\xinhuanet\hylanda\model\entity\Operate.class
+com\xinhuanet\hylanda\model\vo\monitor\TaskListVO.class
+com\xinhuanet\hylanda\model\common\OpResult$OpMsg.class
+com\xinhuanet\hylanda\model\entity\Menu.class
+com\xinhuanet\hylanda\model\entity\UserRole.class
+com\xinhuanet\hylanda\model\entity\MediaName.class
+com\xinhuanet\hylanda\model\common\OpResult.class
+com\xinhuanet\hylanda\model\entity\RoleOperate.class
+com\xinhuanet\hylanda\model\vo\monitor\ListQueryVO.class

@@ -37,7 +37,7 @@
     </mvc:annotation-driven>
 
     <!-- 定义无需Controller的url<->view直接映射 -->
-    <!--<mvc:view-controller path="/" view-name="redirect:/login"/>-->
+    <mvc:view-controller path="/" view-name="redirect:/index"/>
 
     <!-- 全局异常配置 start -->
     <bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">

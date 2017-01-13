@@ -58,7 +58,6 @@
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
 
-
 	<!-- shiroFilter -->
 	<filter>
 		<filter-name>shiroFilter</filter-name>
@@ -70,13 +69,31 @@
 	</filter-mapping>
 
 	<!-- 首页设置 -->
-	<welcome-file-list>
-		<welcome-file>index.html</welcome-file>
-		<welcome-file>index.vm</welcome-file>
-	</welcome-file-list>
+<!--	<welcome-file-list>
+		&lt;!&ndash;<welcome-file>/WEB-INF/index.html</welcome-file>&ndash;&gt;
+		<welcome-file>/WEB-INF/index.vm</welcome-file>
+	</welcome-file-list>-->
 
 	<!-- 错误页设置 -->
-
-
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/template/error/40x.vm</location>
+	</error-page>
+	<error-page>
+		<error-code>403</error-code>
+		<location>/WEB-INF/template/error/40x.vm</location>
+	</error-page>
+	<error-page>
+		<error-code>415</error-code>
+		<location>/WEB-INF/template/error/40x.vm</location>
+	</error-page>
+	<error-page>
+		<error-code>405</error-code>
+		<location>/WEB-INF/template/error/40x.vm</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/WEB-INF/template/error/500.vm</location>
+	</error-page>
 
 </web-app>

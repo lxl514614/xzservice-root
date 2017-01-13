@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xinhuanet.hylanda.dao.monitor.TaskMapper" >
+
+    <resultMap id="BaseResultMap" type="com.xinhuanet.hylanda.model.entity.wxb.WxbTask" >
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="title" property="title" jdbcType="VARCHAR" />
+        <result column="url" property="url" jdbcType="VARCHAR" />
+        <result column="sites" property="sites" jdbcType="VARCHAR" />
+        <result column="demands" property="demands" jdbcType="VARCHAR" />
+        <result column="actionCode" property="action_code" jdbcType="VARCHAR" />
+        <result column="result" property="result" jdbcType="VARCHAR" />
+        <result column="reviewer" property="reviewer" jdbcType="VARCHAR" />
+        <result column="creator" property="creator" jdbcType="VARCHAR" />
+        <result column="type" property="type" jdbcType="INTEGER" />
+        <result column="status" property="status" jdbcType="INTEGER" />
+        <result column="isDelete" property="is_delete" jdbcType="INTEGER" />
+        <result column="createTm" property="create_tm" jdbcType="TIMESTAMP" />
+        <result column="creatorId" property="creator_id" jdbcType="BIGINT" />
+        <result column="desc" property="desc" jdbcType="LONGVARCHAR" />
+        <result column="taskTm" property="task_tm" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+        delete from tbl_wxb_task
+        where id = #{id,jdbcType=BIGINT}
+    </delete>
+
+    <select id="findList" resultMap="BaseResultMap" parameterType="com.xinhuanet.hylanda.model.vo.monitor.TaskQuery">
+        select id, title, url, sites, demands, action_code, result, reviewer, creator, type,
+                status, is_delete, create_tm, creator_id, `desc`,task_tm
+        from tbl_wxb_task
+        where 1 = 1
+        <if test="type!=null"> <![CDATA[ AND type = #{type} ]]></if>
+        <if test="title_keword!=null"> AND title LIKE concat('%', #{title_keword}, '%')</if>
+        <if test="is_delete!=null"> AND is_delete = #{is_delete} </if>
+        <if test="status!=null"> AND status = #{status}</if>
+        <if test="sart_tm!=null"> <![CDATA[ AND create_tm >= #{sart_tm} ]]></if>
+        <if test="end_tm!=null"> <![CDATA[ AND create_tm <= #{end_tm} ]]></if>
+        ORDER BY create_tm DESC
+    </select>
+
+    <insert id="insert" parameterType="com.xinhuanet.hylanda.model.entity.wxb.WxbTask" >
+        insert into tbl_wxb_task (id, title, url,
+        sites, demands, action_code,
+        result, reviewer, creator,
+        type, status, is_delete,
+        create_tm, creator_id, `desc`, task_tm
+        )
+        values (#{id,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR},
+        #{sites,jdbcType=VARCHAR}, #{demands,jdbcType=VARCHAR}, #{actionCode,jdbcType=VARCHAR},
+        #{result,jdbcType=VARCHAR}, #{reviewer,jdbcType=VARCHAR}, #{creator,jdbcType=VARCHAR},
+        #{type,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, #{isDelete,jdbcType=INTEGER},
+        #{createTm,jdbcType=TIMESTAMP}, #{creatorId,jdbcType=BIGINT}, #{desc,jdbcType=LONGVARCHAR},#{taskTm,jdbcType=TIMESTAMP}
+        )
+    </insert>
+
+
+</mapper>
+
+

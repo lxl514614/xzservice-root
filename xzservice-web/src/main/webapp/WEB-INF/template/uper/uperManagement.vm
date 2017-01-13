@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>上稿管理</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="$link.contextPath/static/third/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="$link.contextPath/static/third/bootstrap-time/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="$link.contextPath/static/third/dataTables/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="$link.contextPath/static/css/showBo.css">
+    <link rel="stylesheet" href="$link.contextPath/static/css/style.css">
+    <script src="$link.contextPath/static/third/jquery/jquery.min.js"></script>
+    <script src="$link.contextPath/static/third/bootstrap/js/bootstrap.min.js"></script>
+    <script src="$link.contextPath/static/third/bootstrap-time/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="$link.contextPath/static/third/dataTables/js/jquery.dataTables.min.js"></script>
+    <script src="$link.contextPath/static/third/dataTables/js/dataTables.bootstrap.min.js"></script>
+    <script src="$link.contextPath/static/js/showBo.js"></script>
+    <script src="$link.contextPath/static/js/Ajax.js"></script>
+    <script src="$link.contextPath/static/js/common.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+
+            var data = {"date":2,"title_keyword":" 标题 ","size":10,"index":1};
+            $.ajax({
+                url: "/uper/list",
+                type: "post",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                data: JSON.stringify(data),
+                success: function(data){
+//                   window.location.href = "/uper/list";
+//                   window.location.href = localhost:8080/WEB-INF/template/index.vm;
+                }
+            });
+        });
+    </script>
+
+</head>
+<body class="ms">
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">中央网信办新闻督查系统</a>
+        </div>
+    </div>
+</div>
+<div class="header-search">
+    <form class="navbar-form navbar-right" role="search">
+        <label class="control-label website-search">站内检索</label>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+        </div>
+    </form>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="/index" data-target="#collapseOne" class="news-query">新闻辅助巡查</a>
+                            <input type="hidden" class="news-class-child">
+                            <span class="glyphicon glyphicon-chevron-down first-menu-icon"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse">
+                        <div class="panel-body second-menu">
+                            <h3  class="panel-title ">
+                                <a href="javascript:;" data-toggle="collapse" data-target="#more-website"><span class="second-menu-icon">+</span>多网站巡查</a>
+                            </h3>
+                            <div id="more-website" class="collapse second-menu-list"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="javascript:;" data-target="#collapseTwo">上稿管理</a>
+                            <span class="glyphicon glyphicon-chevron-up first-menu-icon"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse in">
+                        <!--修改-begin-->
+                        <div class="panel-body second-menu">
+                            <h3 class="panel-title focusCurrent">
+                                <a href="javascript:;" data-toggle="tab" data-target="#management-task">管理任务</a>
+                            </h3>
+                            <h3 class="panel-title">
+                                <a href="/uper/add">创建任务</a>
+                            </h3>
+                        </div>
+                        <!--修改-end-->
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="/under/list" data-target="#collapseThree">下稿管理</a>
+                            <span class="glyphicon glyphicon-chevron-up first-menu-icon"></span>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <p>创建任务</p>
+                            <p>管理任务</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main upload-manag tab-content"  id="myTabContent">
+            <div class="tab-pane fade active in" id="management-task">
+                <div class="page-header clearfix">
+                    <form class="form-horizontal" role="form">
+                        <div class="col-sm-1 col-sm-offset-8">
+                            <select class="form-control">
+                                <option>今日</option>
+                                <option>全部</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="glyphicon glyphicon-search search-btn"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-1 col-sm-offset-11" style="text-align: right;">
+                    <span class="glyphicon glyphicon-trash"></span>
+                </div>
+                <div class="table-responsive">
+                    <table class="table" id="myTable">
+                        <thead>
+                        <tr>
+                            <th>
+                                <input name="all" type="checkbox" value="">
+                            </th>
+                            <th>序号</th>
+                            <th>任务名称</th>
+                            <th>发起人</th>
+                            <th>创建时间</th>
+                            <th>完成率</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        #foreach ($!data in $!dataList)
+                            <tr>
+                                <td><input name="all" type="checkbox" value=""></td>
+                                <td>1</td>
+                                <td>$!data.title</td>
+                                <td>$!data.sponsor</td>
+                                <td>$!data.cr_tm</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                            <span class="">40%</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><a href="">监测</a> </td>
+                            </tr>
+                        #end
+                        <tr>
+                            <td><input name="all" type="checkbox" value=""></td>
+                            <td>1</td>
+                            <td>习近平：严防严管严控食品安全风险 保证人民吃</td>
+                            <td>李某某</td>
+                            <td>1.12 10:10</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+                                        <span class="">40%</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><a href="">监测</a> </td>
+                        </tr>
+                        <tr>
+                            <td><input name="all" type="checkbox" value=""></td>
+                            <td>2</td>
+                            <td>习近平：严防严管严控食品安全风险 保证人民吃</td>
+                            <td>李某某</td>
+                            <td>1.12 10:10</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                        <span class="">50%</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><a href="">监测</a> </td>
+                        </tr>
+                        <tr>
+                            <td><input name="all" type="checkbox" value=""></td>
+                            <td>3</td>
+                            <td>习近平：严防严管严控食品安全风险 保证人民吃</td>
+                            <td>李某某</td>
+                            <td>1.12 10:10</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                                        <span class="">30%</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><a href="">监测</a> </td>
+                        </tr>
+                        <tr>
+                            <td><input name="all" type="checkbox" value=""></td>
+                            <td>4</td>
+                            <td>习近平：严防严管严控食品安全风险 保证人民吃</td>
+                            <td>李某某</td>
+                            <td>1.12 10:10</td>
+                            <td>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                        <span class="">60%</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><a href="">监测</a> </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    //分页
+    $('#myTable').DataTable({
+        "searching": false,
+        "pagingType":   "full_numbers",
+        "columnDefs": [
+            { "orderable": false, "targets": 0 },
+            { "orderable": false, "targets": 2 }
+        ],
+        "lengthMenu": [ 15, 25, 50, 75, 100 ],
+        "oLanguage" : {
+            "sLengthMenu": "每页显示 _MENU_ 条记录",
+            "sZeroRecords": "抱歉， 没有找到",
+            "sInfo": "从 _START_ 到 _END_ /共 _TOTAL_ 条数据",
+            "oPaginate": {
+                "sFirst": "首页",
+                "sPrevious": "上一页",
+                "sNext": "下一页",
+                "sLast": "尾页"
+            }
+        },
+        "dom": '<"top"f>rt<"bottom"lip><"clear">'
+    });
+</script>
+</body>
+</html>

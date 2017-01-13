@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xinhuanet.hylanda.dao.MediaNameMapper" >
+  <resultMap id="BaseResultMap" type="com.xinhuanet.hylanda.model.entity.MediaName" >
+    <id column="standard_id" property="standardId" jdbcType="BIGINT" />
+    <result column="media_name" property="mediaName" jdbcType="VARCHAR" />
+    <result column="site_type" property="siteType" jdbcType="VARCHAR" />
+    <result column="tmcreate" property="tmcreate" jdbcType="TIMESTAMP" />
+    <result column="area" property="area" jdbcType="VARCHAR" />
+    <result column="is_rank" property="isRank" jdbcType="INTEGER" />
+    <result column="url" property="url" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from td_medianame
+    where standard_id = #{standardId,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.xinhuanet.hylanda.model.entity.MediaName" >
+    insert into td_medianame (standard_id, media_name, site_type, 
+      tmcreate, area, is_rank, 
+      url)
+    values (#{standardId,jdbcType=BIGINT}, #{mediaName,jdbcType=VARCHAR}, #{siteType,jdbcType=VARCHAR}, 
+      #{tmcreate,jdbcType=TIMESTAMP}, #{area,jdbcType=VARCHAR}, #{isRank,jdbcType=INTEGER}, 
+      #{url,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.xinhuanet.hylanda.model.entity.MediaName" >
+    update td_medianame
+    set media_name = #{mediaName,jdbcType=VARCHAR},
+      site_type = #{siteType,jdbcType=VARCHAR},
+      tmcreate = #{tmcreate,jdbcType=TIMESTAMP},
+      area = #{area,jdbcType=VARCHAR},
+      is_rank = #{isRank,jdbcType=INTEGER},
+      url = #{url,jdbcType=VARCHAR}
+    where standard_id = #{standardId,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select standard_id, media_name, site_type, tmcreate, area, is_rank, url
+    from td_medianame
+    where standard_id = #{standardId,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select standard_id, media_name, site_type, tmcreate, area, is_rank, url
+    from td_medianame
+  </select>
+</mapper>

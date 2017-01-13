@@ -1,0 +1,8 @@
+com\xinhuanet\hylanda\dao\UserRoleMapper.class
+com\xinhuanet\hylanda\dao\OperateMapper.class
+com\xinhuanet\hylanda\dao\RoleOperateMapper.class
+com\xinhuanet\hylanda\dao\RoleMapper.class
+com\xinhuanet\hylanda\dao\UserMapper.class
+com\xinhuanet\hylanda\dao\monitor\TaskMapper.class
+com\xinhuanet\hylanda\dao\MediaNameMapper.class
+com\xinhuanet\hylanda\dao\MenuMapper.class
